@@ -72,19 +72,16 @@ public class BarDrawPanel extends JPanel implements MyValues {
         // the colour graduates from red to yellow.   Check the API documentation for GradientPaint to see
         // how this works. 
         Rectangle2D barx = new Rectangle2D.Double(padding, padding, barLength, barHeight);
-       // Rechtangle2D cd = new Rectangle2D.Double
-        //GradientPaint redtoyellow = new GradientPaint(0 + (float) barx.getHeight()* 0.4F, 0, Color.RED, (float) barx.getHeight()* 0.F, 0, Color.YELLOW);
-          GradientPaint redtoyellow = new GradientPaint(0,0 + (float) barx.getHeight()* 0.8F,Color.RED,0,(float) barx.getHeight()* 0.1F, Color.YELLOW);
+
+        GradientPaint redtoyellow = new GradientPaint(0, 0 + (float) barx.getHeight() * 0.8F, Color.RED, 0, (float) barx.getHeight() * 0.1F, Color.YELLOW);
         g2.setPaint(redtoyellow);
-        //width= 0 + (float) barx.getWidth() * 0.1F
-        //
+
         g2.fill(barx);
 
         // draw the value indicator to show the current value
         g2.setStroke(new BasicStroke(barHeight / 30, BasicStroke.CAP_SQUARE, 0));
         g2.setPaint(Color.gray);
         Line2D valueIndicator = new Line2D.Double( padding / 2F ,padding + (barHeight - (barHeight * value / barMaxValue)),padding + barHeight + (padding* 2F ),(barHeight - (barHeight * value / barMaxValue)));
-       //Line2D valueIndicator = new Line2D.Double( padding / 2F ,padding + (barLength * value / barMaxValue - barMaxValue),padding - barHeight + (padding* 1.5F ),(barLength * value / barMaxValue- barMaxValue));
         g2.draw(valueIndicator);
     }
 
@@ -93,12 +90,6 @@ public class BarDrawPanel extends JPanel implements MyValues {
      *
      * @param value value
      */
-//    @Override
-//    public void setValue(int value) {
-//        // don't let the value go over the maximum for the bar.  But what about the minimum?
-//        this.value = value > barMaxValue ? (int) barMaxValue : value;
-//        repaint(); // causes paintComponent() to be called
-//    }
     @Override
     public void setValue(int value) {
         // don't let the value go over the maximum for the bar.  But what about the minimum?
