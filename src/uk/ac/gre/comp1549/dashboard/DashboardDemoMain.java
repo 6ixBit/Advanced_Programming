@@ -220,15 +220,39 @@ public class DashboardDemoMain extends JFrame {
             };
             dbegXML.registerDashBoardEventListener("speed", dbelSpeed);
 
-            // Register for petrol events from the XML script file
-            DashBoardEventListener dbelPetril = new DashBoardEventListener() {
+            DashBoardEventListener dbelTemp = new DashBoardEventListener() {
+                @Override
+                public void processDashBoardEvent(Object originator, DashBoardEvent dbe) {
+                    tempDial.setValue(Integer.parseInt(dbe.getValue()));
+                }
+            };
+            dbegXML.registerDashBoardEventListener("temp", dbelTemp);
+
+            DashBoardEventListener dbelOil = new DashBoardEventListener() {
+                @Override
+                public void processDashBoardEvent(Object originator, DashBoardEvent dbe) {
+                    oilBar.setValue(Integer.parseInt(dbe.getValue()));
+                }
+            };
+            dbegXML.registerDashBoardEventListener("oil", dbelOil);
+
+            DashBoardEventListener dbelMiles = new DashBoardEventListener() {
                 @Override
                 public void processDashBoardEvent(Object originator, DashBoardEvent dbe) {
                     milesDial.setValue(Integer.parseInt(dbe.getValue()));
-                    petrolBar.setValue(Integer.parseInt(dbe.getValue()));
                 }
             };
-            dbegXML.registerDashBoardEventListener("petrol", dbelPetril);
+            dbegXML.registerDashBoardEventListener("miles", dbelMiles);
+
+            // Register for all events from the XML script file
+            DashBoardEventListener dbelPetril = new DashBoardEventListener() {
+                @Override
+                public void processDashBoardEvent(Object originator, DashBoardEvent dbe) {
+                    petrolBar.setValue(Integer.parseInt(dbe.getValue()));
+
+                }
+            };
+            dbegXML.registerDashBoardEventListener("petrol", dbelPetril); //All values inside ProcessDashBoard could all run on the same amount, which in this case is 62
 
             // Process the script file - it willgenerate events as it runs
             dbegXML.processScriptFile(XML_SCRIPT);

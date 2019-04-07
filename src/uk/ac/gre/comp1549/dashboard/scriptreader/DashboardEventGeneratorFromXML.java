@@ -222,7 +222,7 @@ public class DashboardEventGeneratorFromXML extends DefaultHandler {
      * @param filename - name of the xml file
      * @return filename in URL format e.g "file:///c:/files/file.xml"
      */
-    private static String convertToFileURL(String filename) {
+    private static String convertToFileURL(String filename) { //Colud use this for Singleton pattern
         String path = new File(filename).getAbsolutePath();
         if (File.separatorChar != '/') {
             path = path.replace(File.separatorChar, '/');
