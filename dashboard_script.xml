@@ -9,6 +9,18 @@
 		<type>petrol</type>
 		<value>95</value>
 	</dashboard_event>
+	<dashboard_event>
+		<type>temp</type>
+		<value>35</value>
+	</dashboard_event>
+	<dashboard_event>
+		<type>oil</type>
+		<value>61</value>
+	</dashboard_event>
+	<dashboard_event>
+		<type>miles</type>
+		<value>78</value>
+	</dashboard_event>
 	<delay>5</delay>
 	<dashboard_event>
 		<type>speed</type>
@@ -17,6 +29,18 @@
 	<dashboard_event>
 		<type>petrol</type>
 		<value>93</value>
+	</dashboard_event>
+		<dashboard_event>
+		<type>temp</type>
+		<value>65</value>
+	</dashboard_event>
+	<dashboard_event>
+		<type>oil</type>
+		<value>53</value>
+	</dashboard_event>
+	<dashboard_event>
+		<type>miles</type>
+		<value>44</value>
 	</dashboard_event>
 	<delay>5</delay>
 	<dashboard_event>
@@ -27,6 +51,18 @@
 		<type>petrol</type>
 		<value>91</value>
 	</dashboard_event>
+		<dashboard_event>
+		<type>temp</type>
+		<value>51</value>
+	</dashboard_event>
+	<dashboard_event>
+		<type>oil</type>
+		<value>68</value>
+	</dashboard_event>
+	<dashboard_event>
+		<type>miles</type>
+		<value>67</value>
+	</dashboard_event>
 	<dashboard_event>
 		<type>speed</type>
 		<value>40</value>
@@ -34,6 +70,18 @@
 	<dashboard_event>
 		<type>petrol</type>
 		<value>89</value>
+	</dashboard_event>
+		<dashboard_event>
+		<type>temp</type>
+		<value>42</value>
+	</dashboard_event>
+	<dashboard_event>
+		<type>oil</type>
+		<value>77</value>
+	</dashboard_event>
+	<dashboard_event>
+		<type>miles</type>
+		<value>54</value>
 	</dashboard_event>
 	<delay>5</delay>
 	<dashboard_event>
@@ -44,6 +92,18 @@
 		<type>petrol</type>
 		<value>87</value>
 	</dashboard_event>
+	<dashboard_event>
+		<type>temp</type>
+		<value>36</value>
+	</dashboard_event>
+	<dashboard_event>
+		<type>oil</type>
+		<value>83</value>
+	</dashboard_event>
+	<dashboard_event>
+		<type>miles</type>
+		<value>43</value>
+	</dashboard_event>
 	<delay>5</delay>
 	<dashboard_event>
 		<type>speed</type>
@@ -52,6 +112,18 @@
 	<dashboard_event>
 		<type>petrol</type>
 		<value>85</value>
+	</dashboard_event>
+	<dashboard_event>
+		<type>temp</type>
+		<value>30</value>
+	</dashboard_event>
+	<dashboard_event>
+		<type>oil</type>
+		<value>82</value>
+	</dashboard_event>
+	<dashboard_event>
+		<type>miles</type>
+		<value>41</value>
 	</dashboard_event>
 	<delay>5</delay>
 	<dashboard_event>
@@ -62,6 +134,19 @@
 		<type>petrol</type>
 		<value>81</value>
 	</dashboard_event>
+	
+		<dashboard_event>
+		<type>temp</type>
+		<value>35</value>
+	</dashboard_event>
+	<dashboard_event>
+		<type>oil</type>
+		<value>86</value>
+	</dashboard_event>
+	<dashboard_event>
+		<type>miles</type>
+		<value>35</value>
+	</dashboard_event>
 	<delay>5</delay>
 	<dashboard_event>
 		<type>speed</type>
@@ -71,6 +156,20 @@
 		<type>petrol</type>
 		<value>77</value>
 	</dashboard_event>
+	
+	<dashboard_event>
+		<type>temp</type>
+		<value>39</value>
+	</dashboard_event>
+	
+	<dashboard_event>
+		<type>oil</type>
+		<value>89</value>
+	</dashboard_event>
+	<dashboard_event>
+		<type>miles</type>
+		<value>30</value>
+	</dashboard_event>	
 	<delay>5</delay>
 	<dashboard_event>
 		<type>speed</type>
@@ -80,6 +179,18 @@
 		<type>petrol</type>
 		<value>73</value>
 	</dashboard_event>
+		<dashboard_event>
+		<type>temp</type>
+		<value>43</value>
+	</dashboard_event>
+	<dashboard_event>
+		<type>oil</type>
+		<value>92</value>
+	</dashboard_event>
+	<dashboard_event>
+		<type>miles</type>
+		<value>26</value>
+	</dashboard_event>		
 	<delay>5</delay>
 	<dashboard_event>
 		<type>speed</type>
@@ -89,6 +200,18 @@
 		<type>petrol</type>
 		<value>68</value>
 	</dashboard_event>
+		<dashboard_event>
+		<type>temp</type>
+		<value>40</value>
+	</dashboard_event>
+	<dashboard_event>
+		<type>oil</type>
+		<value>95</value>
+	</dashboard_event>
+	<dashboard_event>
+		<type>miles</type>
+		<value>21</value>
+	</dashboard_event>	
 	<delay>5</delay>
 	<dashboard_event>
 		<type>speed</type>
@@ -97,6 +220,18 @@
 	<dashboard_event>
 		<type>petrol</type>
 		<value>62</value>
+	</dashboard_event>
+	<dashboard_event>
+		<type>temp</type>
+		<value>34</value>
+	</dashboard_event>
+	<dashboard_event>
+		<type>oil</type>
+		<value>97</value>
+	</dashboard_event>
+	<dashboard_event>
+		<type>miles</type>
+		<value>18</value>
 	</dashboard_event>
 	<delay>5</delay>
 	<dashboard_event>

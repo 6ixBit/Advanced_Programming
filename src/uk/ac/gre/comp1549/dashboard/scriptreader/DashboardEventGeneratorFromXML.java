@@ -8,6 +8,7 @@ import java.util.*;
 import java.io.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import uk.ac.gre.comp1549.dashboard.designPatterns.Singleton;
 import uk.ac.gre.comp1549.dashboard.events.*;
 
 /**
@@ -85,7 +86,7 @@ public class DashboardEventGeneratorFromXML extends DefaultHandler {
         xmlReader.setContentHandler(this);
         // Start the parsing process.  As the file is processed methods in the startElement(), endElement() and
         // characters() methods in the current object will be called to handle the content of the XML file.
-        xmlReader.parse(convertToFileURL(filename));
+        xmlReader.parse(Singleton.convertToFileURL(filename)); //Use method from singleton class to import file
     }
 
     /**
@@ -213,25 +214,6 @@ public class DashboardEventGeneratorFromXML extends DefaultHandler {
      */
     public void removeDashBoardEventListener(String type, DashBoardEventListener dbel) {
         dashBoardListeners.removeListener(type, dbel);
-    }
-
-    /**
-     * convertToFileURL() is a utility method just used if DashboardDemoMain is
-     * run in standalone mode to test the class
-     *
-     * @param filename - name of the xml file
-     * @return filename in URL format e.g "file:///c:/files/file.xml"
-     */
-    private static String convertToFileURL(String filename) { //Colud use this for Singleton pattern
-        String path = new File(filename).getAbsolutePath();
-        if (File.separatorChar != '/') {
-            path = path.replace(File.separatorChar, '/');
-        }
-
-        if (!path.startsWith("/")) {
-            path = "/" + path;
-        }
-        return "file:" + path;
     }
 
     /**

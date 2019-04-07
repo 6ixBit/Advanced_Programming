@@ -219,7 +219,8 @@ public class DashboardDemoMain extends JFrame {
                 }
             };
             dbegXML.registerDashBoardEventListener("speed", dbelSpeed);
-
+            
+            // Register for temp events from the XML script file
             DashBoardEventListener dbelTemp = new DashBoardEventListener() {
                 @Override
                 public void processDashBoardEvent(Object originator, DashBoardEvent dbe) {
@@ -228,6 +229,7 @@ public class DashboardDemoMain extends JFrame {
             };
             dbegXML.registerDashBoardEventListener("temp", dbelTemp);
 
+            // Register for oil events from the XML script file
             DashBoardEventListener dbelOil = new DashBoardEventListener() {
                 @Override
                 public void processDashBoardEvent(Object originator, DashBoardEvent dbe) {
@@ -236,6 +238,7 @@ public class DashboardDemoMain extends JFrame {
             };
             dbegXML.registerDashBoardEventListener("oil", dbelOil);
 
+            // Register for miles events from the XML script file
             DashBoardEventListener dbelMiles = new DashBoardEventListener() {
                 @Override
                 public void processDashBoardEvent(Object originator, DashBoardEvent dbe) {
@@ -244,7 +247,7 @@ public class DashboardDemoMain extends JFrame {
             };
             dbegXML.registerDashBoardEventListener("miles", dbelMiles);
 
-            // Register for all events from the XML script file
+            // Register for petrol events from the XML script file
             DashBoardEventListener dbelPetril = new DashBoardEventListener() {
                 @Override
                 public void processDashBoardEvent(Object originator, DashBoardEvent dbe) {
