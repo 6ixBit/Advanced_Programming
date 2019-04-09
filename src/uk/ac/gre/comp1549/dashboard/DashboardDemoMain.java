@@ -17,6 +17,7 @@ import javax.swing.WindowConstants;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import uk.ac.gre.comp1549.dashboard.barPanels.*;
+import uk.ac.gre.comp1549.dashboard.designPatterns.NullPattern;
 import uk.ac.gre.comp1549.dashboard.fullDials.*;
 import uk.ac.gre.comp1549.dashboard.digitalDials.*;
 import uk.ac.gre.comp1549.dashboard.halfDials.HalfDialPanel;
@@ -418,5 +419,6 @@ public class DashboardDemoMain extends JFrame {
      */
     public static void main(String[] args) {
       final DashboardDemoMain me = new DashboardDemoMain();
+      ;
     }
 }

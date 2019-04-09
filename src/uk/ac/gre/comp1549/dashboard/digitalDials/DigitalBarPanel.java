@@ -37,4 +37,9 @@ public class DigitalBarPanel extends MainPanel {
     public void setLabel(String label) {
         lblTitle.setText(label);
     }
+
+    @Override
+    public boolean isNil() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

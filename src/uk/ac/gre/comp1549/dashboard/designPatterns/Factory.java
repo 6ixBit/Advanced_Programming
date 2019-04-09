@@ -19,6 +19,6 @@ public class Factory { //This could be used to decide which dial class gets an i
         } else if (type.equals("PETROL")) {
             return new BarPanel();
         }
-        return null;
+        return new NullPattern(); //Null Pattern extends upon Factory pattern, combining the two
     }
 }

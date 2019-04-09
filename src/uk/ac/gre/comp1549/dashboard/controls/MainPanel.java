@@ -15,6 +15,9 @@ abstract public class MainPanel extends JPanel {
     
     //Each sub class will call this to create their graphic
     abstract public void create();
+    
+    //Null Design Pattern
+    abstract public boolean isNil();
       
     public MainPanel(){
     }  
